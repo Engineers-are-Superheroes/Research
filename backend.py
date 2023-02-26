@@ -34,8 +34,8 @@ def backend(id,d_type):
 
     tasks = re.findall(r'(?:Needs \(Gaps\))((\n|.)*)(?:Operational Strat)', text)[0][0]
 
-    #os.remove('dref.pdf')
-    #os.remove('dref.txt')
+    os.remove('dref.pdf')
+    
 
 
     prompt = d_type + "happens. The following problem needs a solution: " + tasks + "Suggest volunteering activities from the above problems in the form: \n Name of the activity, this is not a sentence just a name\n Description of the activity in a maximum of 3 sentences."
